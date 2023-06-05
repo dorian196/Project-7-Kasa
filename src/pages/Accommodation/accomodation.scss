@@ -1,0 +1,146 @@
+.contents {
+    border-radius: 10px;
+    padding-top: 50px;
+}
+
+.accomodation {
+    margin-bottom: 50px;
+
+    .accomodation-collapse {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        @media screen and (max-width: 1155px){
+            flex-direction: column;  
+        }
+
+        .accomodation-collapse-item1 {
+            position: relative;
+            bottom: 14px;
+            width: 46%;
+            padding: 2px;
+            @media screen and (max-width: 1155px){
+                flex-direction: column;
+                width: 100%;  
+            }
+
+            .accomodation-li {
+            background-color: #F6F6F6;
+            color: #FF6060;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.4;
+            padding: 0;
+            border-radius: 10px;
+            .content{
+                padding: 10px 18px 10px 18px;
+            }
+            }
+        }
+        
+        .accomodation-collapse-item {
+            width: 46%;
+            padding: 2px;
+            
+            @media screen and (max-width: 1155px){
+                flex-direction: column;
+                width: 100%;  
+            }   
+        }
+    }
+
+    .accomodation-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        @media screen and (max-width: 1155px){
+            flex-direction: column;
+        }
+
+
+        .accomodation-infos {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-weight: 500;
+            font-size: 14px;
+            color: #FF6060;
+
+            h1 {
+                font-weight: 500;
+                font-size: calc(18px + (36 - 18) * ((100vw - 300px) / (1600 - 300)));
+            }
+
+            p {
+                font-weight: 500;
+                font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+                margin-top: -20px;
+            }
+            
+            button {
+                display: inline;
+                padding: 5px 15px;
+                margin-right: 10px;
+                border-radius: 10px;
+                border: 0;
+                color: white;
+                background-color: #FF6060;
+            }
+            div {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+
+        .accomodation-host {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            @media screen and (max-width: 1155px){
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-between;
+                
+            }
+            div {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                gap: 0 10px;
+            }
+
+            .accomodation-name {
+                align-self: center;
+                flex-direction: column;
+            }
+
+            span {
+               color: #FF6060;
+            }
+
+            img {
+                width: 64px;
+                height: 64px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+            }
+            
+            .accomodation-star {
+                display: flex;
+                gap: 10px;
+                @media screen and (max-width: 1155px){
+                    margin-right: calc(115px + (750 - 115) * ((100vw - 400px) / (1155 - 400)));
+   
+                }
+                img {
+                    width: calc(13px + (24 - 13) * ((100vw - 400px) / (1155 - 400)));
+                    height: calc(13px + (24 - 13) * ((100vw - 400px) / (1155 - 400)));
+                }
+            }
+        }
+    }
+}
