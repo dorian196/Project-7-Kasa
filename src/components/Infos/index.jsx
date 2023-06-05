@@ -9,7 +9,7 @@ function Infos() {
     const dataCurrentAccomodation = Data.filter(data => data.id === idAccomodation)
 
     return (
-        <div className="accomodation-infos">
+        <div className="accomodation_infos">
         <h1>{dataCurrentAccomodation[0].title}</h1>
         <p>{dataCurrentAccomodation[0].location}</p>
         <div>

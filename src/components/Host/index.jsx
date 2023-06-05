@@ -1,7 +1,9 @@
 // Data
 import Data from "../../Data/Data.json"
-// Modules
+// Module
 import { useParams } from "react-router-dom";
+// Function
+import Star from "../Star/inedex"
 
 function Host() {
     const idAccomodation = useParams('id').id
@@ -9,15 +11,17 @@ function Host() {
 
     const name = dataCurrentAccomodation[0].host.name.split(' ');
     return (
-        <div className="accomodation-host">
+        <div className="accomodation_host">
             <div>
-                <div className="accomodation-name">
+                <div className="accomodation_host_name">
                     <span>{name[0]}</span>
                     <span>{name[1]}</span>
                 </div>
                 <img src={dataCurrentAccomodation[0].host.picture} alt="Hote de l'hébergement" />
-            </div>    
+            </div> 
+            < Star />   
         </div>
+        
     )
 }
 

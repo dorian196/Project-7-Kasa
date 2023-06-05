@@ -1,0 +1,12 @@
+.accomodation_star {
+    display: flex;
+    gap: 10px;
+    @media screen and (max-width: 1155px){
+        margin-right: calc(115px + (750 - 115) * ((100vw - 400px) / (1155 - 400)));
+
+    }
+    img {
+        width: calc(13px + (24 - 13) * ((100vw - 400px) / (1155 - 400)));
+        height: calc(13px + (24 - 13) * ((100vw - 400px) / (1155 - 400)));
+    }
+}

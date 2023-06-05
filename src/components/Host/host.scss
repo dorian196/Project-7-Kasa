@@ -1,0 +1,30 @@
+.accomodation_host {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    @media screen and (max-width: 1155px){
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;  
+    }
+    &_name {
+        align-self: center;
+        flex-direction: column;
+    }
+    span {
+        color: $color-secondary;
+     }
+    img {
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+    }
+    div {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 0 10px;
+    }
+}

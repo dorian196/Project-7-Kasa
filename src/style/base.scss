@@ -5,17 +5,9 @@
 	box-sizing: border-box;
 	font-family: "Montserrat", sans-serif;
 }
-
-
-a{
-    text-decoration: none;
+html, body {
+	height:100%;
 }
-
-li{
-    list-style: none;
-}
-
-
 body{
     padding-top: 40px;
 	padding-top: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
@@ -27,15 +19,7 @@ body{
 	padding: 0;
 	font-size: 100%;
 	font: inherit;
-	
-	
-
 }
-
-html, body {
-	height:100%;
-}
-
 .container {
 	display: flex;
 	flex-direction: column;
@@ -45,3 +29,16 @@ html, body {
 .content {
 	flex: 1;
 }
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+
+
+

@@ -1,4 +1,6 @@
+// Module
 import React, { useState } from 'react';
+// Assets
 import arrow from '../../assets/arrow.png';
 
 function Collapse({ title, content }) {
@@ -11,7 +13,7 @@ function Collapse({ title, content }) {
   return (
     <div className='collapse'>
       <button onClick={scrollContent}>
-        <div className="title">{title}</div>
+        <div className="collapse_title">{title}</div>
         <img
           className={open ? 'arrow arrow_up' : 'arrow arrow_down'}
           src={arrow}
@@ -21,9 +23,9 @@ function Collapse({ title, content }) {
       {open && (
         <div className={open ? 'visible-content open' : 'visible-content'}>
           {Array.isArray(content) ? (
-            content.map((item, index) => <div className="content" key={index}>{item}</div>)
+            content.map((item, index) => <div className="collapse_content" key={index}>{item}</div>)
           ) : (
-            <div className="contents">{content}</div>
+            <div className="collapse_contents">{content}</div>
           )}
         </div>
       )}

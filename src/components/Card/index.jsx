@@ -1,15 +1,16 @@
+// Module
 import { Link } from 'react-router-dom'
-
+// Data
 import Data from '../../Data/Data.json'
 
 
 function Card({ id, title, cover }) {
   return (
-    <div className='card-container'>
+    <div className='card_container'>
       {Data.map((data) => {
         return (
-          <Link className='link-card' to={`/Accommodation/${data.id}`} key={data.id}>
-            <div className='image-container'><img src={data.cover} alt={data.title} /></div>
+          <Link className='card_container_link' to={`/Accommodation/${data.id}`} key={data.id}>
+            <div className='card_container_image'><img src={data.cover} alt={data.title} /></div>
             <p>{data.title}</p>
           </Link>
         );

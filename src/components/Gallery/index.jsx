@@ -1,6 +1,9 @@
+// Module
+import { useState } from 'react';
+// Assets
 import arrowRight from "../../assets/arrowRight.png";
 import arrowLeft from "../../assets/arrowLeft.png";
-import { useState } from 'react';
+
 
 function Gallery({ slide }) {
   const [currentIndex, setCurrentIndex] = useState(0);

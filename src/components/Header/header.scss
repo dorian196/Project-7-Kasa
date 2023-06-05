@@ -1,7 +1,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-
+    
     img {
             height: calc(40px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
     }

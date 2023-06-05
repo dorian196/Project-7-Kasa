@@ -1,0 +1,34 @@
+.accomodation_infos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: $color-secondary;
+
+    h1 {
+        font-weight: 500;
+        font-size: calc(18px + (36 - 18) * ((100vw - 300px) / (1600 - 300)));
+    }
+
+    p {
+        font-weight: 500;
+        font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+        margin-top: -20px;
+    }
+    
+    button {
+        display: inline;
+        padding: 5px 15px;
+        margin-right: 10px;
+        border-radius: 10px;
+        border: 0;
+        color: $color-primary;
+        background-color: $color-secondary;
+    }
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

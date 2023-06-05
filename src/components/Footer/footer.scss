@@ -7,9 +7,9 @@
     background-color: black;
     margin: 0 -25.79% 0 -25.79%;
 
-    .text {
+    p {
         
-        color: rgb(255, 255, 255);
+        color: $color-primary;
         padding-top: 31.67px;
         white-space : nowrap;
         font-size:  calc(12px + (24 - 12) * ((100vw - 300px) / (1600 - 300)));

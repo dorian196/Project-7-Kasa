@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // Pages
 import Home from './pages/Home'
 import About from './pages/About'
-import Accommodation from './pages/Accommodation'
+import Accommodation from './pages/Accommodation/index'
 import Error from './pages/Error'
 // Components
 import Header from './components/Header'
