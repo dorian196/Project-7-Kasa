@@ -18,18 +18,19 @@ ReactDOM.render(
     <React.StrictMode>
         <Router>
           <div className='container'>
-          <Header />
-          <div className='content'>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/About" element={<About />} />
-                <Route path="/Accommodation/:id" element={<Accommodation />} />
-                <Route path="*" element={<Error />} />
-            </Routes>
-            </div>
-          <Footer />
+            <Header />
+            <div className='content'>
+              <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/About" element={<About />} />
+                  <Route path="/Accommodation/:id" element={<Accommodation />} />
+                  <Route path="*" element={<Error />} />
+              </Routes>
+              </div>   
           </div>
+          <Footer />
         </Router>
     </React.StrictMode>,
 document.getElementById('root')
 )
+

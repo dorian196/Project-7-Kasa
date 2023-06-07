@@ -1,7 +1,11 @@
+// Module
 import React from 'react';
+// Fonctions
 import Banner from '../../components/Banner/index'
-import montagne from '../../assets/montagne.png';
 import Collapse from '../../components/Collapse';
+// Assets
+import montagne from '../../assets/montagne.png';
+// Data
 import AboutData from '../../Data/AboutData.json'
 
 function About() {

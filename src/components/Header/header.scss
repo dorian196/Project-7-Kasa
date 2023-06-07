@@ -4,5 +4,8 @@
     
     img {
             height: calc(40px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
+            @media screen and (max-width: 300px){
+                height: 20px;
+            }
     }
 }

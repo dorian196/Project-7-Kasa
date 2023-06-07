@@ -1,29 +1,32 @@
-// Modules
-import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom";
-// Data
-import Data from "../../Data/Data.json"
-// Functions
-import Gallery from "../../components/Gallery"
-import CollapseAccomodation from "../../components/CollapseAccomodation/index"
+import { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import Data from "../../Data/Data.json";
+import Gallery from "../../components/Gallery";
+import CollapseAccomodation from "../../components/CollapseAccomodation/index";
+
 
 function Accommodation() {
-   
-    const [slide, setImageSlide] = useState([])
-    
-    const idAccomodation = useParams('id').id
+  const [slide, setImageSlide] = useState([]);
+  const { id } = useParams();
+  const navigate = useNavigate();
 
-    useEffect(() =>{
-        const dataCurrentAccomodation = Data.filter(data => data.id === idAccomodation)
-        setImageSlide(dataCurrentAccomodation[0].pictures)
-    }, [idAccomodation])
+  useEffect(() => {
+    const dataCurrentAccomodation = Data.find((data) => data.id === id);
+    if (dataCurrentAccomodation) {
+      setImageSlide(dataCurrentAccomodation.pictures);
+    } else {
+      // Si l'URL correspond à un logement invalide, rediriger vers la page d'erreur
+      navigate("/Error");
+    }
+  }, [id, navigate]);
 
-    return (
-        <div>
-            <Gallery slide={slide}/>
-            < CollapseAccomodation />
-        </div>
-    )
+ 
+  return (
+    <div>
+      <Gallery slide={slide} />
+      <CollapseAccomodation />
+    </div>
+  );
 }
 
-export default Accommodation
+export default Accommodation;

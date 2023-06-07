@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Data from '../../Data/Data.json'
 
 
-function Card({ id, title, cover }) {
+function Card() {
   return (
     <div className='card_container'>
       {Data.map((data) => {

@@ -6,6 +6,9 @@
         text-decoration: none;
         color: $color-secondary;
         font-size: calc(15px + (23 - 15) * ((100vw - 300px) / (1600 - 300)));
+        @media screen and (max-width: 300px){
+            font-size: 12px;
+        }
         padding-left: calc(10px + (60 - 10) * ((100vw - 300px) / (1600 - 300)));
         font-weight: 500;
         white-space : nowrap;
